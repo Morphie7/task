@@ -1,5 +1,11 @@
 <?php  
 session_start();
+if (isset($_SESSION["thanks"])) {
+	$_SESSION['firstName'] = "";
+	$_SESSION['lastName'] = "";
+	$_SESSION['email'] = "";
+	$_SESSION['message'] = "";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
